@@ -10,7 +10,7 @@ uniqueTabId.uniqIdFunc = uniqid;
 
 function App() {
   const [text, setText] = useState("");
-  uniqueTabId.tabidCallback = (tabid, wasDuplicated, isNewTab) => setText(`TabId: ${tabid}; Duplicated: ${wasDuplicated}; New Tab: ${isNewTab}`);
+  uniqueTabId.tabIdCallback = ({tabId, isTabNew, parentTabId}) => setText(`TabId: ${tabId}; New Tab: ${isTabNew}; Duplicated: ${parentTabId !== null ? `Yes, parentTabId = ${parentTabId}` : "No"}`);
   useEffect(() => uniqueTabId.initTab(), []);
   return (
     <div className="App">

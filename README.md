@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This makes use of unique-tabid, and gives you a React based example on how to use it.
 
-Have a look at the second commit for the exact changes needed.
+Have a look from the second commit for the exact changes needed.
 
 ## Available Scripts
 
